@@ -1,7 +1,7 @@
 #################### Build Parameters ###########################
 #
 #xilinx apps
-ISE_VER=
+ISE_VER=-14.2
 
 NGDBUILD=ngdbuild$(ISE_VER)
 MAP=map$(ISE_VER)

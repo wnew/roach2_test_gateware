@@ -26,95 +26,9 @@ SRC=./modules/toplevel/hdl/toplevel.v \
 		./modules/epb_wb_bridge_reg/hdl/epb_wb_bridge_reg.v \
 		./modules/wbs_arbiter/hdl/timeout.v \
 		./modules/wbs_arbiter/hdl/wbs_arbiter.v \
-		./modules/sgmii_phy/hdl/sgmii_phy.v \
-		./modules/sgmii_phy/hdl/sgmii_gtx.v \
-		./modules/temac/hdl/emac_wrapper.v \
-		./modules/temac/hdl/temac.v \
-		./modules/gbe_udp/hdl/gbe_arp_cache.v \
-		./modules/gbe_udp/hdl/gbe_cpu_buffer.v \
-		./modules/gbe_udp/hdl/gbe_ctrl_fifo.v \
-		./modules/gbe_udp/hdl/gbe_cpu_attach.v \
-		./modules/gbe_udp/hdl/gbe_rx_ctrl_fifo.v \
-		./modules/gbe_udp/hdl/gbe_rx_packet_fifo.v \
-		./modules/gbe_udp/hdl/gbe_rx.v \
-		./modules/gbe_udp/hdl/gbe_tx.v \
-		./modules/gbe_udp/hdl/gbe_udp.v \
-		./modules/gbe_udp/hdl/gbe_tx_packet_fifo.v\
 		./modules/gpio_controller/hdl/gpio_controller.v \
 		./modules/sys_block/hdl/sys_block.v \
-		./modules/qdr_controller_softcal/hdl/qdrc_infrastructure.v \
-		./modules/qdr_controller_softcal/hdl/qdrc_phy_train.v \
-		./modules/qdr_controller_softcal/hdl/qdrc_top.v \
-		./modules/qdr_controller_softcal/hdl/qdr_controller_softcal.v \
-		./modules/qdr_controller_softcal/hdl/qdrc_phy.v \
-		./modules/qdr_controller_softcal/hdl/qdrc_phy_align.v \
-		./modules/qdr_controller_softcal/hdl/qdrc_cpu_attach.v \
-		./modules/qdr_cpu_interface/hdl/qdr_cpu_interface.v \
-		./modules/ddr3_clk/hdl/ddr3_clk.v \
-		./modules/ddr3_controller/hdl/arb_mux.v \
-		./modules/ddr3_controller/hdl/arb_row_col.v \
-		./modules/ddr3_controller/hdl/arb_select.v \
-		./modules/ddr3_controller/hdl/bank_cntrl.v \
-		./modules/ddr3_controller/hdl/bank_common.v \
-		./modules/ddr3_controller/hdl/bank_compare.v \
-		./modules/ddr3_controller/hdl/bank_mach.v \
-		./modules/ddr3_controller/hdl/bank_queue.v \
-		./modules/ddr3_controller/hdl/bank_state.v \
-		./modules/ddr3_controller/hdl/circ_buffer.v \
-		./modules/ddr3_controller/hdl/clk_ibuf.v \
-		./modules/ddr3_controller/hdl/col_mach.v \
-		./modules/ddr3_controller/hdl/ddr2_ddr3_chipscope.v \
-		./modules/ddr3_controller/hdl/ddr3_controller.v \
-		./modules/ddr3_controller/hdl/mc.v \
-		./modules/ddr3_controller/hdl/memc_ui_top.v \
-		./modules/ddr3_controller/hdl/mem_intfc.v \
-		./modules/ddr3_controller/hdl/phy_ck_iob.v \
-		./modules/ddr3_controller/hdl/phy_clock_io.v \
-		./modules/ddr3_controller/hdl/phy_control_io.v \
-		./modules/ddr3_controller/hdl/phy_data_io.v \
-		./modules/ddr3_controller/hdl/phy_dly_ctrl.v \
-		./modules/ddr3_controller/hdl/phy_dm_iob.v \
-		./modules/ddr3_controller/hdl/phy_dq_iob.v \
-		./modules/ddr3_controller/hdl/phy_dqs_iob.v \
-		./modules/ddr3_controller/hdl/phy_init.v \
-		./modules/ddr3_controller/hdl/phy_pd_top.v \
-		./modules/ddr3_controller/hdl/phy_pd.v \
-		./modules/ddr3_controller/hdl/phy_rdclk_gen.v \
-		./modules/ddr3_controller/hdl/phy_rdctrl_sync.v \
-		./modules/ddr3_controller/hdl/phy_rddata_sync.v \
-		./modules/ddr3_controller/hdl/phy_rdlvl.v \
-		./modules/ddr3_controller/hdl/phy_read.v \
-		./modules/ddr3_controller/hdl/phy_top.v \
-		./modules/ddr3_controller/hdl/phy_write.v \
-		./modules/ddr3_controller/hdl/phy_wrlvl.v \
-		./modules/ddr3_controller/hdl/rank_cntrl.v \
-		./modules/ddr3_controller/hdl/rank_common.v \
-		./modules/ddr3_controller/hdl/rank_mach.v \
-		./modules/ddr3_controller/hdl/rd_bitslip.v \
-		./modules/ddr3_controller/hdl/round_robin_arb.v \
-		./modules/ddr3_controller/hdl/ui_cmd.v \
-		./modules/ddr3_controller/hdl/ui_rd_data.v \
-		./modules/ddr3_controller/hdl/ui_top.v \
-		./modules/ddr3_controller/hdl/ui_wr_data.v \
-		./modules/ddr3_cpu_interface/hdl/ddr3_cpu_interface.v \
-		./modules/xaui_infrastructure/hdl/xaui_infrastructure.v \
-		./modules/xaui_infrastructure/hdl/gtx_quad.v \
-		./modules/xaui_infrastructure/hdl/xaui_rx_steer.v \
-		./modules/xaui_phy/hdl/xaui_phy.v \
-		./modules/xaui_phy/hdl/xaui_v9_2.v \
-	  ./modules/kat_ten_gb_eth/hdl/arp_cache.v \
-	  ./modules/kat_ten_gb_eth/hdl/cpu_buffer.v \
-	  ./modules/kat_ten_gb_eth/hdl/kat_ten_gb_eth.v \
-	  ./modules/kat_ten_gb_eth/hdl/rx_packet_ctrl_fifo.v \
-	  ./modules/kat_ten_gb_eth/hdl/rx_packet_fifo_bram.v \
-	  ./modules/kat_ten_gb_eth/hdl/rx_packet_fifo_dist.v \
-	  ./modules/kat_ten_gb_eth/hdl/ten_gig_eth_mac_UCB.vhd \
-	  ./modules/kat_ten_gb_eth/hdl/tge_bus_attach.v \
-	  ./modules/kat_ten_gb_eth/hdl/tge_rx.v \
-	  ./modules/kat_ten_gb_eth/hdl/tge_tx.v \
-	  ./modules/kat_ten_gb_eth/hdl/tx_fifo_ext.v \
-	  ./modules/kat_ten_gb_eth/hdl/tx_packet_ctrl_fifo.v \
-	  ./modules/kat_ten_gb_eth/hdl/tx_packet_fifo.v \
+		./modules/kat_adc/*/*.v \
 		./include/parameters.v
 
 
@@ -127,9 +41,8 @@ PARTNUM=6vsx475t-ff1759-1
 VINC=include
 
 GEN_DIR=gen
-NETLIST_DIRS= ./modules/gbe_udp/netlist \
-              ./modules/xaui_phy/netlist \
-              ./modules/kat_ten_gb_eth/netlist
+NETLIST_DIRS=./modules/kat_adc/iic_controller/netlist \
+             ./modules/kat_adc/interface/netlist
 
 NETLIST=./netlist
             
